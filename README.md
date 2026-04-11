@@ -105,17 +105,8 @@ Key insights discovered:
 ### 5. Model Evaluation
 
 Models were evaluated using:
-- Cross-validation with stratified k-fold
 - Classification metrics (accuracy, precision, recall, F1-score)
-- ROC-AUC for imbalanced data
-
-## Results
-
-| Model | Cross-Val Accuracy | ROC-AUC |
-|-------|-------------------|---------|
-| Logistic Regression | ~78% | ~85% |
-| Random Forest | ~81% | ~88% |
-| XGBoost | ~82% | ~89% |
+74% accuracy on testing set on submission for the RF classifier
 
 ## Usage
 
