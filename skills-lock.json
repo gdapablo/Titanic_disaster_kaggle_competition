@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "skills": {
+    "data-analysis": {
+      "source": "supercent-io/skills-template",
+      "sourceType": "github",
+      "computedHash": "d380eb6230b7a285a63b11e18c6c7eeae37f2dd502610ec390975ae1b8627b29"
+    },
+    "data-visualization": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "computedHash": "64055493de5ff4afed716cc871018cf6e020338b76d3e7ed5c2985707cb43cec"
+    },
+    "developing-with-streamlit": {
+      "source": "streamlit/agent-skills",
+      "sourceType": "github",
+      "computedHash": "d366960761de1ec907dee42ddbdc08b9c868584cebc8c9fe8e0efdccb4bc5db7"
+    },
+    "scikit-learn": {
+      "source": "davila7/claude-code-templates",
+      "sourceType": "github",
+      "computedHash": "f03f68164d506a6cdf7e8cae1e46bd38c0e1327248d9aaeece66cb4b6392a3c7"
+    },
+    "tensorflow-neural-networks": {
+      "source": "thebushidocollective/han",
+      "sourceType": "github",
+      "computedHash": "0023593c6b300b8cce8bf8c34d168cb2558ef900879c442ee355e1054c46b132"
+    }
+  }
+}
