@@ -156,7 +156,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Author
 
-- **Pablo** - Machine Learning Enthusiast
+- **Dr. Pablo M. Galán de Anta** - Data Scientist and PhD in Astrophysics
 
 ---
 
