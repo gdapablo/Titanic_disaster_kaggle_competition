@@ -77,6 +77,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost jupyter
 - **Feature encoding**: Converted categorical variables (Sex, Embarked) to numerical
 - **Feature engineering**: Created FamilySize, IsAlone, and Title features from Name
 - **Class balancing**: Addressed imbalanced dataset using undersampling techniques
+- **Data splitting**: Split data into Train (70%), Validation (15%), and Test (15%) sets using stratified sampling with a fixed random seed for reproducibility
 
 ### 2. Exploratory Data Analysis
 
@@ -98,15 +99,24 @@ Key insights discovered:
 
 ### 4. Models Implemented
 
-1. **Logistic Regression** - Baseline linear model
-2. **Random Forest** - Ensemble of decision trees
-3. **XGBoost** - Gradient boosting with regularization
+1. **Logistic Regression** - Baseline linear model with hyperparameter tuning
+2. **Random Forest** - Ensemble of decision trees with GridSearchCV optimization
+3. **XGBoost** - Gradient boosting with regularization and hyperparameter tuning
 
-### 5. Model Evaluation
+### 5. Hyperparameter Tuning
+
+All models were optimized using **GridSearchCV** with cross-validation:
+- Systematic search over predefined hyperparameter grids
+- 5-fold cross-validation on the training set
+- Best parameters selected based on validation performance
+- Prevents overfitting by evaluating on unseen validation data
+
+### 6. Model Evaluation
 
 Models were evaluated using:
 - Classification metrics (accuracy, precision, recall, F1-score)
-74% accuracy on testing set on submission for the RF classifier
+- **Triple-split validation**: Train → Validation → Test pipeline ensures unbiased final evaluation
+- 74% accuracy on testing set on submission for the RF classifier
 
 ## Usage
 
@@ -138,7 +148,8 @@ submission.to_csv('submissions/submission.csv', index=False)
 
 ## Future Improvements
 
-- [ ] Hyperparameter tuning with GridSearchCV or Optuna
+- [x] ~~Hyperparameter tuning with GridSearchCV or Optuna~~ **COMPLETED**
+- [x] ~~Train/Validation/Test split for proper model evaluation~~ **COMPLETED**
 - [ ] Ensemble methods (VotingClassifier, Stacking)
 - [ ] Deep learning approaches (neural networks)
 - [ ] Feature selection using Recursive Feature Elimination
