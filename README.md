@@ -116,7 +116,7 @@ All models were optimized using **GridSearchCV** with cross-validation:
 Models were evaluated using:
 - Classification metrics (accuracy, precision, recall, F1-score)
 - **Triple-split validation**: Train → Validation → Test pipeline ensures unbiased final evaluation
-- 74% accuracy on testing set on submission for the RF classifier
+- 77% accuracy on testing set on submission for both the LR and XGBoost classifiers
 
 ## Usage
 
