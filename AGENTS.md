@@ -16,7 +16,7 @@ Repository Map
 
     /models: Saved model weights and metadata.
 
-    /logs: CRITICAL. Contains session-based error logs and pending tasks.
+    /logs: CRITICAL. Contains session-based action logs and pending tasks.
 
 ## 2. Coding Standards & Best Practices
 Python Scripts (.py)
@@ -79,9 +79,9 @@ Success Metrics
 
 At the start of every session, you must perform the "Morning Standup":
 
-    Read Logs: Scan the /logs directory for unresolved errors or pending tasks.
+    Read Logs: Scan the /logs directory for actions done in the previous session or pending tasks.
 
-    Status Check: Check if these issues were addressed in the last commit/session.
+    Status Check: Check if these actions were addressed in the last commit/session.
 
     Offer Solutions: If unresolved, present a new plan to the user. Do not proceed until the user decides to:
 
